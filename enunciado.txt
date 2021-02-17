@@ -1,0 +1,42 @@
+level 
+representar semaforo con 1 luz circulo negro 
+( con divs)
+
+un botón (div) que al hacer click sobre el, la luz cambie de color con el sig patron
+
+
+negro pasa a  verde
+ otro click verde --> naranja
+ otro clikc naranja--> rojo
+otro click verde ( y el resto de colores otra vez menos el negro)
+
+
+level 2
+estado 0
+hay 3 luces ( estado inicial las tres en negro)
+estado 1
+despues se enciende la verde
+despues se enciende la naranja y se apaga la verde
+etc etc
+estado 2
+
+estado 3
+
+
+
+level 3)
+otro boton que haga reset 
+caja de texto (input) que pide el numero de luces que quiere  (de cuantas luces quieres tu semaforo)
+
+
+puede ser esto????
+math random con max y min ( mirando el rgb ... cuantos hay)
+var RGBColor1 = (Math.round, Math.random, 255)
+var RGBColor2 = (Math.round, Math.random, 255)
+var RGBColor3 = (Math.round, Math.random, 255)
+
+
+
+
+
+.style ----------> utilizar en level 3 porque calculas el color
