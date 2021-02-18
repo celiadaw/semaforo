@@ -8,8 +8,6 @@ const reset = document.getElementById("buttonReset");
 const buttonCreate = document.getElementById("buttonCreate");
 
 
-
-
 // REVISAR!!!!!!NO FUNCIONA
 // let numberOfColors = document.getElementById("numberOfColors").value; 
 numberOfColors=3;
@@ -50,17 +48,23 @@ function getColorRandom() {//funcion que elige un color random
     return  Math.floor(Math.random() * (256 - 0)) + 0; 
 }
  function enableColor(position) {//funcion que enciende
-      colors[position].newCircle.style.backgroundColor(colors[position].newColor);
+    console.log(position + " esta es la bandera.. la posicion para recoger los elementos que quiero")
+    console.log("estoy intentando ver el elemento circle de la posicion" +position+ " es  "+ color[position].circle+ " y el color de ese objeto es " + color[position].color);
+    colors[position].
+      colors[position].circle.style.backgroundColor(colors[position].color);
 
 }
 
 function disableColor(position) {//funcion que apaga
   
-    colors[position].newCircle.style.backgroundColor("rgb(0,0,0)");
+    colors[position].circle.style.backgroundColor("rgb(0,0,0)");
 }
 
 
 function changeColor() {
+    console.log("flag al empezar changeColor" + flag);
+    flag=1;
+    console.log("flag despues de asignar 1 en changeColor" + flag);
     enableColor(flag);
    if(flag==0){
 
@@ -103,8 +107,9 @@ for (let i=0; i<numberOfColors;i++){
     console.log(newColor);
    //  let newClass = "circle"+i;
     let newId= "id"+i;
-
+    
     //debemos crear un nuevo div, (circule con clase button y despues añadirle la clase background color con newColor)
+
     newCircle = document.createElement("div");
     console.log(newCircle);
     newCircle.setAttribute("class", "button");
@@ -112,9 +117,13 @@ for (let i=0; i<numberOfColors;i++){
     //añadimos container
     container.appendChild(newCircle);
    //  newCircle.style.backgroundColor(newColor);
-    colors[colors.lastIndexOf]={newCircle, newColor};
-    console.log(colors[numberOfColors]);
 
+       colors[i]={
+        circle: newCircle, 
+        color: newColor};
+    console.log("posicion 0 del array y lo que hay dentro del objeto " + colors[0].circle +"  2 cosa del objeto" + colors[0].color);
+    
+   
 }
 
 }
