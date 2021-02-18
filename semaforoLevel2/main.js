@@ -7,8 +7,7 @@ const circleRed =document.getElementById("circleRed");
 const container= document.getElementById("container");
 //vuelvo a tener una bandera para saber en que circulo me tengo que situar
 let flag = 0;
-//declaramos un boolean para encender o apagar cada luz
-// let enable=false; 
+
 container.addEventListener("click",changeColor);
 
 // //voy a crear objetos 
@@ -91,16 +90,9 @@ function changeColor() {
         flag=1;
     break;
 
-
-
  }
 }
-
-//  inicializamos
-//  si flag esta en 0 que añada 1
-//  se le da click 
-//  flag 1 -->
-//  recogemos la info de semaforo[0]
+//get elements by className -- se puede usar para este ejercicio.
 
 
 

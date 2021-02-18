@@ -12,6 +12,7 @@
 
 .container {
     width: 50%;
+    position: relative;
    background-color: rgb(165, 150, 150);
     display: flex;
     justify-content: space-around;
@@ -36,9 +37,20 @@
 }
 
 .buttonReset{
-    background-color: violet;
-    width: 50px;
-    height: 50px;
+    background-color: rgb(214, 70, 3);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+
+}
+
+.buttonCreate{
+    background-color: rgb(38, 194, 33);
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     padding: 10px;
     margin: 5px;
